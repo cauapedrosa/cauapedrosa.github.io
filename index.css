@@ -1,0 +1,99 @@
+:root {
+    --margin: 10px;
+    --border: 5px;
+}
+body {
+	font: 150%;
+	font-family: Helvetica, Arial, sans-serif;
+	height: 2000px;
+	background-color: black;
+}
+
+h1 {
+	font: bold 100% Arial, Helvetica, sans-serif;
+}
+
+.main {
+	padding: 5px;
+	justify-content: center;
+	width: auto;
+	margin: 20px auto;
+}
+
+.topbar {
+	height: 50px;
+	width: 100%;
+    color: white;
+	font-weight: bold;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+    text-align: center;
+    background-color: darkslateblue;
+	
+}
+
+.container-box {
+	padding-top: 50px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+	float: middle;
+}
+.box {
+    border: var(--border) snow outset;
+    margin: var(--margin);
+	color: black;
+	background-color: white;
+    height: 50px;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+	min-width: fit-content;
+}
+.a {
+    width: calc((100%/4) - ((var(--margin) * 2) + (var(--border) * 2)));
+}
+.box a{
+	color: black;
+	text-decoration: black underline 2px;
+}
+.botbar {
+	clear: both;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	color: white;
+    background: darkslateblue;
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: 14px;
+}
+
+/* Media queries/* 
+/*  480px or menor  */
+@media screen and (max-width: 480px) {
+	.topbar{
+		position: absolute;
+	}
+	.botbar{
+		position: absolute;
+	}
+	:root {
+		--margin: 5px;
+		--border: 2.5px;
+	}
+	.a {
+		width: calc((100%/2) - ((var(--margin) * 2) + (var(--border) * 2)));
+	}
+}
+
+.clear {
+    clear: both;
+}
