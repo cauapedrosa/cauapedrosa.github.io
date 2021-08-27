@@ -79,12 +79,6 @@ h1 {
 /* Media queries/* 
 /*  480px or menor  */
 @media screen and (max-width: 480px) {
-	/* .topbar{
-		position: absolute;
-	}
-	.botbar{
-		position: absolute;
-	} */
 	:root {
 		--margin: 5px;
 		--border: 2.5px;
