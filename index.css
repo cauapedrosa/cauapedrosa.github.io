@@ -5,7 +5,6 @@
 body {
 	font: 150%;
 	font-family: Helvetica, Arial, sans-serif;
-	height: 2000px;
 	background-color: black;
 }
 
@@ -64,7 +63,7 @@ h1 {
 }
 .botbar {
 	clear: both;
-	position: fixed;
+	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	width: 100%;
@@ -72,7 +71,6 @@ h1 {
 	color: white;
     background: darkslateblue;
     text-align: center;
-    /* font-weight: bold; */
     font-size: 14px;
 }
 
