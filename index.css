@@ -1,11 +1,13 @@
 :root {
     --margin: 10px;
     --border: 5px;
+	--color1: #3A4257;
+    --color2: #F0DDBC;
 }
 body {
 	font: 150%;
 	font-family: Helvetica, Arial, sans-serif;
-	background-color: black;
+	background-color: var(--color1);
 }
 
 h1 {
@@ -22,7 +24,7 @@ h1 {
 .topbar {
 	height: 60px;
 	width: 100%;
-    color: white;
+    /* color: white; */
 	font-weight: bold;
 	position: fixed;
 	left: 0px;
@@ -31,7 +33,7 @@ h1 {
 	padding-left: 10px;
 	padding-right: 10px;
     text-align: center;
-    background-color: darkslateblue;
+    background-color: var(--color2);
 	
 }
 
@@ -43,10 +45,10 @@ h1 {
 	float: middle;
 }
 .box {
-    border: var(--border) snow outset;
+    border: var(--border) var(--color2) outset;
     margin: var(--margin);
 	color: black;
-	background-color: white;
+	background-color: var(--color2);
     height: 50px;
     padding-top: 30px;
     text-align: center;
@@ -68,14 +70,12 @@ h1 {
 	left: 0px;
 	width: 100%;
 	height: 40px;
-	color: white;
-    background: darkslateblue;
+	/* color: white; */
+    background: var(--color2);
     text-align: center;
     font-size: 12px;
 }
-.botbar a{
-	color: white;
-}
+
 
 /* Media queries/* 
 /*  480px or menor  */
