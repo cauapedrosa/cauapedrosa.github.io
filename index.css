@@ -56,13 +56,20 @@ h1 {
     vertical-align: middle;
 	min-width: fit-content;
 }
-.a {
-    width: calc((100%/4) - ((var(--margin) * 2) + (var(--border) * 2)));
+.box:hover {
+	border: var(--border) var(--color2) inset;
+	/* -webkit-transition: 1s linear; */
+	transition: 1s linear;
+	cursor: pointer;
 }
 .box a{
 	color: black;
 	text-decoration: black underline 2px;
 }
+.a {
+    width: calc((100%/4) - ((var(--margin) * 2) + (var(--border) * 2)));
+}
+
 .botbar {
 	clear: both;
 	position: absolute;
